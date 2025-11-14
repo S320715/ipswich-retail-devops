@@ -1,0 +1,72 @@
+/* GENERAL */
+body {
+    background: #f4f8f7; 
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') no-repeat center center/cover;
+    height: 380px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+}
+
+.hero-sub {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* PRODUCT CARDS */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform .2s ease-in-out, box-shadow .2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.product-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.price-tag {
+    color: #1fae51;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-view {
+    border-radius: 20px;
+}
+
+/* DETAIL PAGE */
+.product-detail-img {
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.back-btn {
+    border-radius: 20px;
+    padding: 8px 25px;
+    margin-top: 20px;
+}

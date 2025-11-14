@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero-section">
+    <div>
+        <h1 class="hero-title">Fresh Essentials Delivered</h1>
+        <p class="hero-sub">Sustainable. Affordable. High Quality Organic Products.</p>
+    </div>
+</div>
+
+<h3 class="mt-4 mb-3 fw-bold text-success">Trending Products</h3>
+
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-3 mb-4">
+        <div class="card product-card">
+            <img src="{{ product.image_url }}" class="card-img-top">
+            <div class="card-body">
+                <p class="product-title">{{ product.name }}</p>
+                <p class="text-muted small">{{ product.description|truncatewords:10 }}</p>
+                <p class="price-tag">£{{ product.price }}</p>
+                <a href="/products/{{ product.id }}/" class="btn btn-success btn-view w-100">View</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
